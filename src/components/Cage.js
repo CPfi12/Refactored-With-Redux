@@ -6,6 +6,7 @@ const animalBackground = (animal) => ({ backgroundImage: `url(./src/img/${animal
 	// using destructuring to name individual variables from the first parameter object (props)
 	// {selectedAnimal} is equivalent tofunction Cage(props) { const selectedAnimal = props.selectedAnimal; }
 export default function Cage ({ selectedAnimal }) {
+	console.log('Cage!',selectedAnimal);
 	return (
 		<div style={animalBackground(selectedAnimal)}>
 		</div>
