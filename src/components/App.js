@@ -38,8 +38,7 @@ export default class App extends Component {
                 <div className="clearfix">
                     <div className="block">
                         <h2>Mammals</h2>
-                        {/* setAnimal={setMammal} sending in setAnimal in this way will allow you to connect your redux store with your Exhibit tag 
-                        (this does not follow test specs, but is good practice) */}
+                        
                         {console.log(this.state.selectedMammal)}
                         <Exhibit selectedAnimal={this.state.selectedMammal} animals={mammals} setAnimal={setMammal} handleChange={this.handleChange}/>
                     </div>
@@ -57,3 +56,5 @@ export default class App extends Component {
     }
 
 }
+
+//<select onChange ={(evt)=>{store.dispatch(props.submitAnimal(evt.target.value))}}>

@@ -12,10 +12,9 @@ export default function AnimalSelect (props) {
 				<label>Select an Animal: </label>
 				<select onChange={(event)=>{
 					var x = props.submitAnimal(event.target.value)
-					console.log(props.handleChange);
-					console.log(store.getState());
+					console.log(x); ==
 					props.handleChange(x);
-					console.log(store.getState());
+					
 					}}>
 				
 					{
